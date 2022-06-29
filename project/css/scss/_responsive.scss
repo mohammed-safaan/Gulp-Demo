@@ -1,0 +1,39 @@
+$total: 12;
+
+@function column-width($col) {  
+ @return percentage($col/$total);  
+}
+
+@for $i from 1 through $total {  
+ .col-#{$i} { width: column-width($i) };  
+}
+
+.container {
+  width: 98%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+//  setting the layout to be one column in smale devices
+//   starting from 0 to 992px
+  
+@media screen and (max-width: 992px) {
+  .hero {
+    .col-6 {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .cards {
+    .col-6 {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}

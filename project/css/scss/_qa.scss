@@ -1,0 +1,14 @@
+.qa {
+  width: 100%;
+  padding: 30px;
+  .wrap {
+    .head {
+      padding: 15px;
+      background-color: lighten($main-light,20%);
+      p {
+        font-weight: normal;
+        font-size: 20px;
+      }
+    }
+  }
+}

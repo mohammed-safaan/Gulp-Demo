@@ -1,0 +1,17 @@
+.hero {
+  background-color: lightgrey;
+  padding: 100px 15px;
+  .info {
+    button {
+      background-color: $black;
+      font-weight: normal;
+    }
+  }
+  .image {
+    width: 100%;
+    img {
+      max-width: 100%;
+      @extend %rounded;
+    }
+  }
+}

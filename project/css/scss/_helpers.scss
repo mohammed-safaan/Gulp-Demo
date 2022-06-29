@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 15px 0;
+  width: 100%;
+}
+
+
+$p1: floor(10.5)#{px};
+$p2: floor(20.7)#{px};
+
+
+%rounded {
+  border-radius: 5px;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__btn {
+  background-color: gray;
+  padding: 10px 20px ;
+  text-transform: capitalize;
+  color:$white;
+  font-weight: bold;
+  border: none;
+}
